@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+</head>
+<style>
+    .img1 {
+        height: 350px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark" style="background-image: url('projet/img/img1.jpg'); 
+          background-repeat: no-repeat; background-size:cover; background-position: center center;">
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-info mb-3">
+        <div class="container myBorderBlue">
+            <a class="navbar-brand" href="#"><i class="bi bi-bookmark-check-fill"></i></a>
+            <div class="">
+                <h1 class="h1-responsive font-weight-bold text-uppercase justify-content-center"
+                    style="color:#6b213c; font-weight: bold; font-size:medium;">hero Marvel
+                </h1>
+            </div>
+            <form class="form-inline my-2 my-lg-0 justify-content-center">
+                <input class="form-control mr-sm-2 text-center" type="search" placeholder="Search"
+                    aria-label="Search"></input>
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button> -->
+            </form>
+        </div>
+    </nav>
+
+    <div class="row d-flex justify-content-around">
+        <!-- carte profil premier hero -->
+        <div class="col-lg-4 d-lg-grid d-none">
+            <div class="card text-white bg-danger mx-4 ">
+                <div class="card-header fs-3"
+                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+                    Spider-Man</div>
+                <div class="card-body">
+                    <h4 class="card-title fs-2 text-center"
+                        style="color:#003049; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        «Le Vengeur doré»</h4>
+                    <p class="card-text">
+                        <ul class="nav flex-column">
+                            <li class="nav-item  text-center fw-normal">Force, endurance,</li>
+                            <li class="nav-item  text-center fw-normal">Peut s'accrocher sur n'importe quelle surface
+                            </li>
+                            <li class="nav-item  text-center fw-normal">Précognition</li>
+                            <li class="nav-item text-center fw-normal">Facteur guérisseur</li>
+                        </ul>
+                    </p>
+                    <div>
+                        <a href=""><img src="Projet/img/spider1.jpg" class="img-fluid"></a>
+                    </div>
+                </div>
+                </th>
+            </div>
+        </div>
+        <!-- liste des hero -->
+        <div class="col-lg-8 ms-auto ">
+            <table class="table table-light justify-content-around">
+                <thead>
+                    <tr>
+                        <th scope="col">num</th>
+                        <th scope="col">nom</th>
+                        <th scope="col">prenom</th>
+                        <th scope="col">info</th>
+                    </tr>
+                </thead>
+                <tbody class="" style="color:#6b213c; font-weight: bold; font-size:medium;">
+
+                    <!-- spider man -->
+                    <tr class="table-active">
+                        <th scope="row">1
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Peter </td>
+                        <td>Parker</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#spiderman">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="spiderman" tabindex="-1" aria-labelledby="spiderman"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="spiderman">Spider-Man</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Peter Parker, alias Spider-Man « Spiderman »
+                                                est un super-héros évoluant dans l'univers Marvel de la maison
+                                                d'édition Marvel Comics. Créé par le scénariste Stan Lee et le
+                                                dessinateur Steve Ditko</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/spider11.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- iron man -->
+                    <tr class="table-primary">
+                        <th scope="row">2
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Tony </td>
+                        <td>Stark</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#ironman">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ironman" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Iron Man</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Iron Man est un film américain réalisé par Jon Favreau, sorti en
+                                                2008. Il
+                                                raconte les origines et les débuts du personnage éponyme issu du
+                                                comics
+                                                publié par Marvel. Il s'agit de la première étape de l'univers
+                                                cinématographique Marvel,</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/iron.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- CAPTAIN AMERICA /   -->
+                    <tr class="table-success">
+                        <th scope="row">3
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Steve</td>
+                        <td>Rogers</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#captainamerica">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="captainamerica" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Captain America</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Steven « Steve » Rogers, alias Captain America est un super-héros
+                                                évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.
+                                                Créé par le scénariste Joe Simon et le dessinateur Jack Kirby, le
+                                                personnage de fiction apparaît pour la première fois dans le comic
+                                                book
+                                            </p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/captain-america-1024x512.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!--  THOR -->
+                    <tr class="table-warning">
+                        <th scope="row">4
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Chris </td>
+                        <td>Hemsworth</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#thor">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="thor" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">THOR</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Thor est le dieu du Tonnerre dans la mythologie nordique. Il est l'un
+                                                des
+                                                principaux dieux du panthéon nordique, et fut vénéré dans l'ensemble
+                                                du
+                                                monde germanique. On trouve ainsi différentes formes et graphies de
+                                                son
+                                                nom selon les époques et les régions du monde germanique </p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/THOR-780x406.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!--  HULK / BRUCE BANNER -->
+                    <tr class="table-info">
+                        <th scope="row">5
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Bruce</td>
+                        <td>Banner</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#hulk">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="hulk" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">HULK</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Hulk, est un super-héros évoluant dans l'univers Marvel de la maison
+                                                d'édition Marvel Comics. Créé par le scénariste Stan Lee et le
+                                                dessinateur Jack Kirby, le personnage de fiction apparaît pour la
+                                                première fois dans le comic book The Incredible Hulk </p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/hulk.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- BLACK PANTHER / T'CHALLA Chadwick Boseman -->
+                    <tr class="table-light">
+                        <th scope="row">6
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Chadwick</td>
+                        <td>Boseman</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#challa">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="challa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">BLACK PANTHER</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>T'Challa, alias la Panthère noire (Black Panther en version
+                                                originale)
+                                                est un super-héros évoluant dans l'univers Marvel de la maison
+                                                d'édition
+                                                Marvel Comics. Créé par le scénariste Stan Lee et le dessinateur
+                                                Jack
+                                                Kirby, le personnage de fiction apparaît pour la première fois dans
+                                                le
+                                                comic book</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/challa.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Stephen Strange, -->
+                    <tr class="table-danger">
+                        <th scope="row">7
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Stephen</td>
+                        <td>Strange</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#stronge">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="stronge" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Docteur Strange</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Stephen Strange, alias Docteur Strange (« Doctor Strange » en VO) est
+                                                un
+                                                super-héros évoluant dans l'univers Marvel de la maison d'édition
+                                                Marvel
+                                                Comics. Créé par le scénariste Stan Lee3 et le dessinateur Steve
+                                                Ditko,
+                                                le personnage de fiction apparaît pour la première fois dans le
+                                                comic
+                                                book Strange Tales #110 en juillet 1963.</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/d.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Ryan Reynolds Deadpool -->
+                    <tr class="table-info">
+                        <th scope="row">8
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>rayan</td>
+                        <td>Reynolds</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#deadpool">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="deadpool" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Deadpool</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Wade Wilson, alias Deadpool est un anti-héros évoluant dans l'univers
+                                                Marvel de la maison d'édition Marvel Comics. Créé par le scénariste
+                                                Fabian Nicieza et le dessinateur Rob Liefeld, le personnage de
+                                                fiction
+                                                apparaît pour la première fois dans le comic book The New Mutants
+                                                #98 en
+                                                février 1991.</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/deadpool.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Wolverine -->
+                    <tr class="table-light">
+                        <th scope="row">9
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>James </td>
+                        <td>Howlett</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#wolverine">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="wolverine" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Wolverine</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Logan, alias Wolverine est un super-héros évoluant dans l'univers
+                                                Marvel
+                                                de la maison d'édition Marvel Comics. Créé par l'éditeur en chef de
+                                                Marvel Comics Roy Thomas3, le scénariste Len Wein4 et le dessinateur
+                                                John Romita, Sr.5, le personnage de fiction apparaît pour la
+                                                première
+                                                fois dans le comic book Incredible Hulk (vol. 1) #180 en octobre
+                                                1974.
+                                            </p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/w.jpg'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Loki Loki Laufeyson -->
+                    <tr class="table-danger">
+                        <th scope="row">10
+                            <!-- <img src="projet/img/spider1.jpg" alt="spiderman" height="90" width="100"> -->
+                        </th>
+                        <td>Loki</td>
+                        <td>Laufeyson</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#loki">plus d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="loki" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="text-center" id="exampleModalLabel">Loki</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-light bg-dark">
+                                            <p>Loki, aussi appelé Loptr ou Hveðrungr (et Loge dans la tétralogie de
+                                                Wagner), est le dieu de la malice, de la discorde et des illusions
+                                                dans
+                                                la mythologie nordique. Il est le fils du géant Farbauti et de
+                                                Laufey.
+                                                Loki est le père de plusieurs monstres : le serpent Jörmungand, le
+                                                loup
+                                                Fenrir et la déesse du monde des morts Hel. Il est également la mère
+                                                du
+                                                cheval d'Odin à huit jambes Sleipnir. Malgré ses origines, il est
+                                                accueilli dans le panthéon divin des Ases par Odin.</p>
+                                            <div class="text-center p-1 p-y-1 py-lg-4 img1 bg-dark"
+                                                style="background-image: url('projet/img/mcu.png'); 
+                                                         background-repeat: no-repeat; background-size:cover; background-position: center center;">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row bg-" style="height: 200px;"></div>
+
+        <footer class="pt-3 bg-dark mt-3">
+
+            <div class="row justify-content-center text-center m-0">
+                <div class="col-sm-4">
+                    <label for="inputNewsletter" class="form-label text-light">Inscription</label>
+                    <input type="text" class="form-control" id="inputNewsletter" placeholder="name@example.com">
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
